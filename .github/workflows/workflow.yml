@@ -29,7 +29,7 @@ jobs:
         run: pip install requests python-dateutil
 
       - name: Run script to fetch Semgrep findings
-        run: python fetch_findings.py
+        run: python findings.py
 
       - name: Upload findings as GitHub Actions artifact
         uses: actions/upload-artifact@v4
