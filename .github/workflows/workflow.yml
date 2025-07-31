@@ -4,7 +4,12 @@ on:
   workflow_dispatch: {}  # run manually
   schedule:
     - cron: '45 2 * * *'  # run daily at 02:45 UTC
-
+  push:
+      branches:
+        - main
+        - master
+      paths:
+        - .github/workflows/workflow.yml
 jobs:
   fetch-and-archive:
     runs-on: ubuntu-latest
