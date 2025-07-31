@@ -1,7 +1,7 @@
 import os
 
 # Read the token from environment
-api_token = steps: ${{ secrets.SEMGREP_APP_TOKEN }}
+api_token = os.getenv("SEMGREP_APP_TOKEN")
 
 # Check if the token exists and print debug info
 if api_token:
