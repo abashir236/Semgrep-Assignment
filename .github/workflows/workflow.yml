@@ -10,6 +10,7 @@ on:
         - master
       paths:
         - .github/workflows/workflow.yml
+        - findings.py
 jobs:
   fetch-and-archive:
     runs-on: ubuntu-latest
