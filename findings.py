@@ -6,7 +6,7 @@ from datetime import datetime
 from dateutil import parser as date_parser
 
 API_TOKEN = os.getenv("SEMGREP_API_TOKEN")
-API_URL = "https://semgrep.dev/api/v1/findings"
+API_URL = "https://semgrep.dev/api/v1/deployments/abashir236/findings"
 HEADERS = {
     "Authorization": f"Bearer {API_TOKEN}",
     "Accept": "application/json"
