@@ -37,7 +37,7 @@ def fetch_all_findings():
             break
 
         data = resp.json()
-        results = data.get("results", [])
+        results = data.get("findings", [])
         print(f"  ➕ {len(results)} findings")
 
         for finding in results:
