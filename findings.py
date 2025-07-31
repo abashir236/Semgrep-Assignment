@@ -19,7 +19,7 @@ headers = {
 START_DATE = date_parser.parse("2024-01-01T00:00:00Z")
 
 # Semgrep Findings API
-BASE_URL = "https://semgrep.dev/api/v1/deployments/abashir236/projects"
+BASE_URL = "https://semgrep.dev/api/v1/deployments/abashir236/findings"
 OUTPUT_FILE = "semgrep_findings.json"
 
 def fetch_all_findings():
