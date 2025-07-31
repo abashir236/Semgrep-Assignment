@@ -1,0 +1,19 @@
+# .github/workflows/fetch_semgrep_rules.yml
+name: Fetch Semgrep Rules
+
+on:
+  workflow_dispatch:  # optional, lets you run manually
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: pip install requests
+      - name: Run fetch_rules.py
+        run: python fetch_rules.py
+        env:
+          SEMGREP_API_TOKEN: ${{ secrets.SEMGREP_API_TOKEN }}
