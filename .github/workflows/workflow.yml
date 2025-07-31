@@ -15,7 +15,7 @@ jobs:
   fetch-and-archive:
     runs-on: ubuntu-latest
     env:
-      SEMGREP_API_TOKEN: ${{ secrets.SEMGREP_API_TOKEN }}
+      SEMGREP_API_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
 
     steps:
       - name: Checkout repository
